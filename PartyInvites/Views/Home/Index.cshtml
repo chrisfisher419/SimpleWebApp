@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>Index</title>
+    <style>
+        .btn a { color: orange; text-decoration: none}
+        body { background-color: #F1F1F1;}
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h2>We're going to have an exciting party!</h2>
+        <br />
+        <h3>And <i>you</i> are invited!</h3>
+        <img src="https://smittenkitchendotcom.files.wordpress.com/2017/08/german-chocolate-wedding-cake.jpg?w=750" alt="Chocolate Cake" />
+        <br />
+        <div class="btn btn-outline-danger">
+            @Html.ActionLink("RSVP Now", "RsvpForm")  <!-- added here-->
+            <hr />
+        </div>
+    </div>
+</body>
+</html>
